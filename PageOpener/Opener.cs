@@ -42,7 +42,7 @@ namespace PageOpener
                     if (process.MainWindowTitle != "")
                     {
                         string s = process.ProcessName.ToLower();
-                        if (s == "chrome" || s == "firefox")      //needs a better way to close browser window
+                        if (s == "chrome" || s == "firefox" || s == "msedge")      //needs a better way to close browser window
                             process.Kill();
                     }
                 }
